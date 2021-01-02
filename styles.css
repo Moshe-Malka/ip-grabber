@@ -1,0 +1,68 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+    height: 100%;
+    width: -webkit-fill-available;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    padding-top: 60px;
+    white-space: nowrap;
+}
+
+.sidebar a {
+    cursor: default;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 35px;
+    color: #818181;
+    display: block;
+}
+
+.sidebar a span{
+    -o-user-select: text;
+    -moz-user-select: text;
+    -webkit-user-select: text;
+    user-select: text;
+    cursor: text;
+}
+.sidebar a i{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar_title{
+    color: #f1f1f1;
+}
+
+.material-icons,
+.icon-text {
+    vertical-align: middle;
+}
+
+.material-icons {
+    padding-bottom: 3px;
+    padding-right: 10px;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+    .sidebar a {
+        font-size: 18px;
+    }
+}
